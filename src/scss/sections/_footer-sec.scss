@@ -1,0 +1,7 @@
+@use '../custom';
+
+.footer-sec{
+    height: 50vh;
+    background-color: var(--footer);
+    z-index: 10;
+}

@@ -1,0 +1,122 @@
+@use '../custom';
+
+@media (max-width: 576px) {
+    .img-profile {
+        max-width: 35vw !important;
+        left: 75% !important;
+        top: 55% !important;
+    }
+
+    .header-text {
+        & h1 {
+            margin-bottom: 0px !important;
+            margin-top: 30px !important;
+        }
+    }
+
+    .img-header-background {
+        filter: blur(1px) !important;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    // .img-profile {
+    //     max-width: 400px !important;
+    //     bottom: 0 !important;
+    //     max-height: auto;
+    // }
+}
+
+.img-header-background {
+    max-height: 100vh;
+    width: 100%;
+    margin-top: 55px;
+    animation: main-img-header-anim 1.5s alternate;
+    filter: blur(2px);
+}
+
+.img-profile {
+    position: absolute;
+    max-width: 20vw;
+    max-height: auto;
+    top: 50%;
+    left: 80%;
+    animation: main-img-anim 1.3s alternate;
+    transition: all 1s ease-in-out;
+    transition-duration: .15s;
+    &:hover {
+        filter: brightness(.95);
+        cursor: pointer;
+    }
+
+}
+
+
+.header-text {
+    position: absolute;
+    top: 25%;
+    margin-left: 5vw;
+
+    & h1 {
+        font-size: 6vw;
+        color: var(--bs-primary);
+        margin-bottom: 30px;
+        font-weight: 400;
+        animation: main-img-anim 1.3s alternate 0s;
+    }
+
+    & p {
+        font-size: 3vw;
+        color: var(--bs-secondary);
+        font-weight: 400;
+        font-style: italic;
+        line-height: 2vh;
+        animation: main-img-anim 1.3s alternate .3s;
+    }
+
+    & h2 {
+        font-size: 6vw;
+        color: steelblue;
+        font-weight: 700;
+        font-style: bold !important;
+        animation: main-img-anim 1.3s alternate .6s;
+    }
+
+    & h2:hover {
+        color: var(--bs-primary);
+    }
+
+    & h3 {
+        font-size: 3vw;
+        color: rgb(74, 74, 74);
+        font-weight: 700;
+        animation: main-img-anim 1.3s alternate .9s;
+    }
+}
+
+@keyframes main-img-anim {
+    0% {
+        margin-top: -700px;
+        opacity: 0;
+    }
+
+    20% {
+        margin-top: -700px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes main-img-header-anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,9 @@
+@use '../custom';
+
+.nav-item-name{
+    transition: all .3s ease-in-out;
+}
+
+.nav-item-name:hover{
+    transform: translate(0, -3px) scale(1.10); 
+}
