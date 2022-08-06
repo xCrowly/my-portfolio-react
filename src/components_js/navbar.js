@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-md fixed-top 
-        bg-light shadow w-100 bg-opacity-75">
+    bg-light shadow w-100 bg-opacity-75">
       <div className="container-fluid">
         <div className="mx-1 text-info">
           <FontAwesomeIcon icon={faCode} />
@@ -32,7 +32,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
 export default Navbar;

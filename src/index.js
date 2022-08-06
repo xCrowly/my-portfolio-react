@@ -1,17 +1,41 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './assets/scss/styles.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Navbar from './components_js/navbar';
-import BootStrap from 'bootstrap';
+import BootStrap from "bootstrap";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./assets/scss/styles.css";
+import FooterSection from "./components_js/footerSec";
+import Navbar from "./components_js/headerSec";
+import MainSection from "./components_js/mainSec";
+import Header from "./components_js/navbar";
+import ProjectsSection from "./components_js/projectsSec";
+import SkillSection from "./components_js/skillSec";
+import reportWebVitals from "./reportWebVitals";
 
-const navbar = ReactDOM.createRoot(document.getElementById('navbar'));
-navbar.render(
-    <Navbar />
-);
+const navbar = ReactDOM.createRoot(document.getElementById("navbar"));
+navbar.render(<Navbar />);
+
+const header = ReactDOM.createRoot(document.getElementById("img-header"));
+header.render(<Header />);
+
+const main = ReactDOM.createRoot(document.getElementById('main'));
+main.render(<MainSection />)
+
+const projects = ReactDOM.createRoot(document.getElementById("projects"))
+projects.render(<ProjectsSection />)
+
+const skill = ReactDOM.createRoot(document.getElementById("skills"))
+skill.render(<SkillSection />)
+
+const footer = ReactDOM.createRoot(document.getElementById("footer"))
+footer.render(<FooterSection />)
+
+
+
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
