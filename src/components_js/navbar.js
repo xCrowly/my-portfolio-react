@@ -1,10 +1,16 @@
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+const styles = {
+  backgroundImage: 'none',
+  backgroundColor: 'rgba(249, 250, 253, 0.4)',
+  backdropFilter: 'blur(4px)'
+}
+
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-md fixed-top 
-    bg-light shadow w-100 bg-opacity-75">
+     shadow w-100 " style={styles}>
       <div className="container-fluid">
         <div className="mx-1 text-info">
           <FontAwesomeIcon icon={faCode} />

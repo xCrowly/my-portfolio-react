@@ -1,77 +1,68 @@
 @use '../custom';
 
 @media (max-width: 576px) {
-    .img-profile {
-        max-width: 35vw !important;
-        left: 75% !important;
-        top: 55% !important;
+    .img-header-background {
+        background: white;
+        padding-top: 20vh;
+        min-height: 100vh;
+        width: 100%;
     }
 
     .header-text {
+        padding: 15px;
+
         & h1 {
-            margin-bottom: 0px !important;
-            margin-top: 30px !important;
+            font-size: 6vh !important;
+        }
+
+        & p {
+            font-size: 3vh !important;
+        }
+
+        & h2 {
+            font-size: 4vh !important;
+        }
+
+        & h3 {
+            font-size: 2vh !important;
         }
     }
 
-    .img-header-background {
-        filter: blur(1px) !important;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    // .img-profile {
-    //     max-width: 400px !important;
-    //     bottom: 0 !important;
-    //     max-height: auto;
-    // }
 }
 
 .img-header-background {
-    max-height: 100vh;
+    position: relative;
+    background: white;
+    min-height: 100vh;
     width: 100%;
-    margin-top: 55px;
-    animation: main-img-header-anim 1.5s alternate;
-    filter: blur(2px);
+    // margin-top: 55px;
+    // animation: main-img-header-anim 1.5s alternate;
+    // filter: blur(2px);
 }
 
 .img-profile {
-    position: absolute;
-    max-width: 20vw;
-    max-height: auto;
-    top: 50%;
-    left: 80%;
-    animation: main-img-anim 1.3s alternate;
-    transition: all 1s ease-in-out;
-    transition-duration: .15s;
-    &:hover {
-        filter: brightness(.95);
-        cursor: pointer;
-    }
-
+    min-width: 35vw;
+    margin: auto;
+    animation: main-img-anim2 3s alternate 0s;
 }
 
 
 .header-text {
-    position: absolute;
-    top: 25%;
-    margin-left: 5vw;
-
     & h1 {
         font-size: 6vw;
         color: var(--bs-primary);
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         font-weight: 400;
-        animation: main-img-anim 1.3s alternate 0s;
+        animation: main-img-anim 1.8s alternate 0s;
     }
 
     & p {
         font-size: 3vw;
-        color: var(--bs-secondary);
+        color: rgb(74, 74, 74);
         font-weight: 400;
         font-style: italic;
         line-height: 2vh;
-        animation: main-img-anim 1.3s alternate .3s;
+        animation: main-img-anim 1.8s alternate 0s;
     }
 
     & h2 {
@@ -79,7 +70,7 @@
         color: steelblue;
         font-weight: 700;
         font-style: bold !important;
-        animation: main-img-anim 1.3s alternate .6s;
+        animation: main-img-anim 1.8s alternate 0s;
     }
 
     & h2:hover {
@@ -90,8 +81,17 @@
         font-size: 3vw;
         color: rgb(74, 74, 74);
         font-weight: 700;
-        animation: main-img-anim 1.3s alternate .9s;
+        animation: main-img-anim 1.8s alternate 0s;
     }
+}
+
+.toast-welcome {
+    position: fixed;
+    width: auto;
+    bottom: 8px;
+    right: 8px;
+    height: auto;
+    z-index: 2001;
 }
 
 @keyframes main-img-anim {
@@ -111,12 +111,19 @@
     }
 }
 
-@keyframes main-img-header-anim {
+@keyframes main-img-anim2 {
     0% {
+        filter: blur(3px);
+        opacity: 0;
+    }
+
+    30% {
+        filter: blur(1px);
         opacity: 0;
     }
 
     100% {
+        filter: blur(0);
         opacity: 1;
     }
 }
