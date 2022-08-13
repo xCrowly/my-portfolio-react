@@ -12,7 +12,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-md fixed-top 
      shadow w-100 " style={styles}>
       <div className="container-fluid">
-        <div className="mx-1 text-info">
+        <div className="mx-2 text-info">
           <FontAwesomeIcon icon={faCode} />
         </div>
         <a className="navbar-brand fw-bolder text-primary nav-item-name" href="#img-header">Ahmed Badawy</a>
@@ -23,7 +23,7 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#main-sec">About me</a>
+              <a className="nav-link active" aria-current="page" href="#main">About me</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#projects-sec">My projects</a>

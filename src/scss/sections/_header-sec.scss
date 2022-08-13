@@ -35,15 +35,12 @@
     background: white;
     min-height: 100vh;
     width: 100%;
-    // margin-top: 55px;
-    // animation: main-img-header-anim 1.5s alternate;
-    // filter: blur(2px);
 }
 
 .img-profile {
     min-width: 35vw;
     margin: auto;
-    animation: main-img-anim2 3s alternate 0s;
+    animation: zoomIn 1s alternate 0s;
 }
 
 
@@ -53,7 +50,7 @@
         color: var(--bs-primary);
         // margin-bottom: 30px;
         font-weight: 400;
-        animation: main-img-anim 1.8s alternate 0s;
+        animation: main-img-anim 1.5s alternate 0s;
     }
 
     & p {
@@ -62,7 +59,7 @@
         font-weight: 400;
         font-style: italic;
         line-height: 2vh;
-        animation: main-img-anim 1.8s alternate 0s;
+        animation: main-img-anim 1.5s alternate 0s;
     }
 
     & h2 {
@@ -70,25 +67,21 @@
         color: steelblue;
         font-weight: 700;
         font-style: bold !important;
-        animation: main-img-anim 1.8s alternate 0s;
-    }
-
-    & h2:hover {
-        color: var(--bs-primary);
+        animation: main-img-anim 1.5s alternate 0s;
     }
 
     & h3 {
         font-size: 3vw;
         color: rgb(74, 74, 74);
         font-weight: 700;
-        animation: main-img-anim 1.8s alternate 0s;
+        animation: main-img-anim 1.5s alternate 0s;
     }
 }
 
 .toast-welcome {
     position: fixed;
     width: auto;
-    bottom: 8px;
+    top: 68px;
     right: 8px;
     height: auto;
     z-index: 2001;
@@ -96,34 +89,26 @@
 
 @keyframes main-img-anim {
     0% {
-        margin-top: -700px;
-        opacity: 0;
-    }
-
-    20% {
-        margin-top: -700px;
+        transform: translate3d(-100%, -400%, 0);
         opacity: 0;
     }
 
     100% {
-        margin-top: 0px;
         opacity: 1;
     }
 }
 
-@keyframes main-img-anim2 {
+@keyframes zoomIn {
     0% {
-        filter: blur(3px);
         opacity: 0;
-    }
-
-    30% {
-        filter: blur(1px);
-        opacity: 0;
+        transform: scale3d(.3, .3, .3);
     }
 
     100% {
-        filter: blur(0);
         opacity: 1;
     }
+}
+
+.zoomIn {
+    animation: zoomIn .5s 0s;
 }

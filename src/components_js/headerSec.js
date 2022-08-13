@@ -8,10 +8,10 @@ function Header() {
     // to add the toast element to the scene
     function triggerToast() {
         setToast(t =>
-            t = <div className="toast fade show toast-welcome" role="alert"
+            t = <div className="toast fade show toast-welcome zoomIn" role="alert"
                 aria-live="assertive" aria-atomic="true"
             >
-                <div className="toast-header" style={{ backgroundColor: "#4682B4", color: "#FFFFFF" }}>
+                <div className="toast-header" style={{ backgroundColor: "#FF4800", color: "#FFFFFF" }}>
                     <strong className="me-auto">Ahmed Badawy</strong>
                     <button type="button" className="btn-close" data-bs-dismiss="toast" aria-label="Close"
                     ></button>
@@ -23,11 +23,20 @@ function Header() {
         )
     }
 
+    function removeToast() {
+        setToast(r => r = <div></div>)
+    }
+
     // timer for lateInit
     function toastCountDown() {
-        window.setTimeout(() => triggerToast(), 4000)
+        window.setTimeout(() => triggerToast(), 5000);
+        window.setTimeout(() => removeToast(), 10000);
     }
-    toastCountDown()
+    
+    // to check if the toast already triggered or not
+    if (toast === "") {
+        toastCountDown()
+    }
 
     return (
         <header className="d-flex flex-wrap flex-row img-header-background posititon-relative">
