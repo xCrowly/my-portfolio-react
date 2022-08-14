@@ -10,7 +10,7 @@ const styles = {
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-md fixed-top 
-     shadow w-100 " style={styles}>
+     shadow w-100" style={styles}>
       <div className="container-fluid">
         <div className="mx-2 text-info">
           <FontAwesomeIcon icon={faCode} />

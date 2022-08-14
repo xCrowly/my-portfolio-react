@@ -3,7 +3,7 @@
 #main {
     display: flex;
     min-height: 100vh;
-
+    background: #FFF5EE;
 }
 
 .main-sec {
@@ -11,4 +11,14 @@
     min-height: 80vh;
     margin-top: 100px;
     align-content: space-between;
+
+}
+
+.img-cert {
+    transition: all .25s ease-in-out;
+
+    &:hover {
+        transform: scale(1.06);
+        filter: saturate(.7);
+    }
 }
