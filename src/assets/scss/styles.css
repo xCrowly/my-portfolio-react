@@ -10770,10 +10770,49 @@ textarea.form-control-lg {
   transform: translate(0, -3px) scale(1.1);
 }
 
+@media (max-width: 576px) {
+  .note {
+    font-size: 12px !important;
+  }
+}
 .footer-sec {
-  height: 50vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
   background-color: var(--footer);
   z-index: 10;
+  padding: 30px;
+}
+.footer-sec ul {
+  list-style: none;
+}
+
+.footer-item {
+  margin: auto;
+  padding: auto;
+  min-width: 30vw;
+  color: aliceblue;
+}
+
+.fa-icon {
+  width: 40px;
+  margin: 0 10px 10px 0;
+}
+
+.fa-container:hover {
+  cursor: pointer;
+}
+
+.note {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  margin: 0;
+  font-size: 15px;
+  color: var(--bs-secondary);
 }
 
 @media (max-width: 576px) {
@@ -10909,11 +10948,14 @@ textarea.form-control-lg {
 }
 
 .card-holder {
+  width: 225px;
+  height: 300px;
   border-radius: 0 !important;
+  transition: all 0.2s ease-in-out;
 }
-
 .card-holder:hover {
-  box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2509803922);
+  transform: scale(1.15);
 }
 
 .card-btn {
@@ -10924,14 +10966,20 @@ textarea.form-control-lg {
   left: 50%;
   bottom: 0;
   transform: translatex(-50%) translateY(50%);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
-
 .card-btn:hover {
   cursor: pointer;
   box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.2509803922);
   color: steelblue !important;
   background: white !important;
+}
+
+.card-image {
+  box-sizing: border-box !important;
+  height: 150px;
+  width: 100%;
+  transition: all 0.1s ease-in-out;
 }
 
 /*# sourceMappingURL=styles.css.map */

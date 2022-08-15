@@ -1,7 +1,48 @@
 @use '../custom';
 
-.footer-sec{
-    height: 50vh;
+@media (max-width: 576px) {
+    .note {
+        font-size: 12px !important;
+    }
+}
+
+.footer-sec {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
     background-color: var(--footer);
     z-index: 10;
+    padding: 30px;
+
+    & ul {
+        list-style: none;
+    }
+}
+
+.footer-item {
+    margin: auto;
+    padding: auto;
+    min-width: 30vw;
+    color: aliceblue;
+}
+
+.fa-icon {
+    width: 40px;
+    margin: 0 10px 10px 0;
+}
+
+.fa-container:hover {
+    cursor: pointer;
+}
+
+.note {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    margin: 0;
+    font-size: 15px;
+    color: var(--bs-secondary);
 }

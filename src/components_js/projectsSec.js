@@ -1,37 +1,20 @@
+import cards from "../assets/json/cards.json";
 import Card from "./card";
+
 function ProjectsSection() {
     return (
-        <section id="projects-sec" className="projects-sec" style={{background:"#FFDAB9"}}>
+        <section id="projects-sec" className="projects-sec" style={{ background: "#FFDAB9" }}>
             <div className="card-container text-center container">
-                <Card
-                    name="Ahmed"
-                    description="This is the website description"
-                />
-                <Card
-                    name="Ahmed"
-                    description="This is the website description"
-                />
-                <Card
-                    name="Ahmed"
-                    description="This is the website description"
-                />
-                <Card
-                    name="Ahmed"
-                    description="This is the website description"
-                />
-                <Card
-                    name="Ahmed"
-                    description="This is the website description"
-                />
-                <Card
-                    name="Ahmed"
-                    description="This is the website description"
-                />
-                <Card
-                    name="Ahmed"
-                    description="This is the website description"
-                />
-
+                {cards.data.cards.map(user => {
+                    return (
+                        <Card
+                            name={user.name}
+                            description={user.description}
+                            link={user.link}
+                            image={user.image}
+                        />
+                    )
+                })}
             </div>
         </section>
     )
