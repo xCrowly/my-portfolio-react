@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function FooterSection() {
     return (
-        <footer id="footer-sec" class="footer-sec ">
+        <footer id="footer-sec" className="footer-sec ">
 
             <ul className="footer-item flex-colomn p-2">
                 <li className="flex-row text-primary fw-bold">
@@ -61,7 +61,7 @@ function FooterSection() {
                         className="flex-row fw-bold fa-container
                       text-decoration-none" rel="noreferrer">
                         <h1>
-                            <i><FontAwesomeIcon icon={faAt} className="fa-icon" color="#FFF5EE"
+                            <i><FontAwesomeIcon icon={faAt} className="fa-icon" color="var(--bs-secondary)"
                                 style={{ margin: '0 10px 0 0', width: '40px' }} /></i>
                             <span className="text-secondary">Email</span>
                         </h1>

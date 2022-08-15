@@ -30,7 +30,19 @@ footer.render(<FooterSection />)
 
 export { header };
 
+window.onscroll = function () { myFunction() };
 
+function myFunction() {
+    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        document.getElementById("main").className = "fadeIn";
+    }
+    if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+        document.getElementById("projects").className = "fadeIn";
+    }
+    if (document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700) {
+        document.getElementById("skills").className = "fadeIn";
+    }
+}
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

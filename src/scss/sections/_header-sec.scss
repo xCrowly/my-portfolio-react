@@ -2,7 +2,7 @@
 
 @media (max-width: 576px) {
     .img-header-background {
-        background: #FFDAB9;
+        background: var(--header);
         padding-top: 20vh;
         min-height: 100vh;
         width: 100%;
@@ -32,7 +32,7 @@
 
 .img-header-background {
     position: relative;
-    background: #FFDAB9;
+    background: var(--header);
     min-height: 100vh;
     width: 100%;
 }
@@ -98,6 +98,11 @@
     }
 }
 
+.main-img-anim {
+    animation: main-img-anim .5s 0s;
+
+}
+
 @keyframes zoomIn {
     0% {
         opacity: 0;
@@ -111,4 +116,18 @@
 
 .zoomIn {
     animation: zoomIn .5s 0s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1.6s 0s;
 }

@@ -11,7 +11,7 @@ function Header() {
       t = <div className="toast fade show toast-welcome zoomIn" role="alert"
         aria-live="assertive" aria-atomic="true"
       >
-        <div className="toast-header" style={{ backgroundColor: "#C2410C", color: "#FFFFFF" }}>
+        <div className="toast-header" style={{ backgroundColor: "var(--bs-primary)", color: "#FFFFFF" }}>
           <strong className="me-auto">Ahmed Badawy</strong>
           <button type="button" className="btn-close" data-bs-dismiss="toast" aria-label="Close">
           </button>

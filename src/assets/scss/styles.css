@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
   --footer: #162B45;
+  --header: #FFDAB9;
 }
 
 /*!
@@ -10812,12 +10813,13 @@ textarea.form-control-lg {
   bottom: 0;
   margin: 0;
   font-size: 15px;
+  font-weight: 300;
   color: var(--bs-secondary);
 }
 
 @media (max-width: 576px) {
   .img-header-background {
-    background: #FFDAB9;
+    background: var(--header);
     padding-top: 20vh;
     min-height: 100vh;
     width: 100%;
@@ -10840,7 +10842,7 @@ textarea.form-control-lg {
 }
 .img-header-background {
   position: relative;
-  background: #FFDAB9;
+  background: var(--header);
   min-height: 100vh;
   width: 100%;
 }
@@ -10897,6 +10899,10 @@ textarea.form-control-lg {
     opacity: 1;
   }
 }
+.main-img-anim {
+  animation: main-img-anim 0.5s 0s;
+}
+
 @keyframes zoomIn {
   0% {
     opacity: 0;
@@ -10908,6 +10914,18 @@ textarea.form-control-lg {
 }
 .zoomIn {
   animation: zoomIn 0.5s 0s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation: fadeIn 1.6s 0s;
 }
 
 #main {

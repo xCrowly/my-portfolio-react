@@ -34,7 +34,7 @@ function MainSection() {
       <div className="tab-content my-5 mx-3" id="pills-tabContent">
 
         <div className="tab-pane fade show active" id="pills-intro" role="tabpanel"
-          aria-labelledby="pills-intro-tab" tabindex="0">
+          aria-labelledby="pills-intro-tab" tabIndex="0">
           <strong className="fs-2 " style={{ color: "#4682B4" }}>
             Hello there,
           </strong>
@@ -54,7 +54,7 @@ function MainSection() {
         </div>
 
         <div className="tab-pane fade" id="pills-certification" role="tabpanel"
-          aria-labelledby="pills-certification-tab" tabindex="0">
+          aria-labelledby="pills-certification-tab" tabIndex="0">
           <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
             <div className="carousel-indicators rounded bg-dark">
               <button type="button" data-bs-target="#carouselExampleIndicators"
@@ -95,7 +95,7 @@ function MainSection() {
           </div>
         </div>
         {/* <div className="tab-pane fade" id="pills-goal" role="tabpanel"
-                    aria-labelledby="pills-goal-tab" tabindex="0">...</div> */}
+                    aria-labelledby="pills-goal-tab" tabIndex="0">...</div> */}
       </div>
 
     </main >
