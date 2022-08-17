@@ -1,9 +1,10 @@
 @use '../custom';
 
+
 @media (max-width: 576px) {
     .img-header-background {
         background: var(--header);
-        padding-top: 20vh;
+        padding-top: 20vh !important;
         min-height: 100vh;
         width: 100%;
     }
@@ -30,27 +31,30 @@
 
 }
 
+// header section body 
 .img-header-background {
     position: relative;
     background: var(--header);
     min-height: 100vh;
     width: 100%;
+    padding: 30px;
 }
 
+// main image in the header section
 .img-profile {
     min-width: 35vw;
     margin: auto;
     animation: zoomIn 1s alternate 0s;
 }
 
-
+// header section text content
 .header-text {
     & h1 {
         font-size: 6vw;
         color: var(--bs-primary);
         // margin-bottom: 30px;
         font-weight: 400;
-        animation: main-img-anim 1.5s alternate 0s;
+        animation: main-text-anim 1.5s alternate 0s;
     }
 
     & p {
@@ -59,7 +63,7 @@
         font-weight: 400;
         font-style: italic;
         line-height: 2vh;
-        animation: main-img-anim 1.5s alternate 0s;
+        animation: main-text-anim 1.5s alternate 0s;
     }
 
     & h2 {
@@ -67,17 +71,18 @@
         color: steelblue;
         font-weight: 700;
         font-style: bold !important;
-        animation: main-img-anim 1.5s alternate 0s;
+        animation: main-text-anim 1.5s alternate 0s;
     }
 
     & h3 {
         font-size: 3vw;
         color: rgb(74, 74, 74);
         font-weight: 700;
-        animation: main-img-anim 1.5s alternate 0s;
+        animation: main-text-anim 1.5s alternate 0s;
     }
 }
 
+// toast styling
 .toast-welcome {
     position: fixed;
     width: auto;
@@ -87,7 +92,8 @@
     z-index: 2001;
 }
 
-@keyframes main-img-anim {
+// text animation
+@keyframes main-text-anim {
     0% {
         transform: translate3d(-100%, -400%, 0);
         opacity: 0;
@@ -98,11 +104,12 @@
     }
 }
 
-.main-img-anim {
-    animation: main-img-anim .5s 0s;
-
+// text animation class
+.main-text-anim {
+    animation: main-text-anim .5s 0s;
 }
 
+// default sec animation
 @keyframes zoomIn {
     0% {
         opacity: 0;

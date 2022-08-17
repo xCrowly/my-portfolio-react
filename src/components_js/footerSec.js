@@ -1,10 +1,47 @@
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
 
 function FooterSection() {
+
+    const [toast, setToast] = React.useState("")
+
+    // to add the toast element to the scene
+    function triggerToast() {
+        setToast(t =>
+            t = <div className="toast fade show toast-welcome zoomIn" role="alert"
+                aria-live="assertive" aria-atomic="true"
+            >
+                <div className="toast-header" style={{ backgroundColor: "var(--bs-primary)", color: "#FFFFFF" }}>
+                    <strong className="me-auto">Ahmed Badawy</strong>
+                    <button type="button" className="btn-close" data-bs-dismiss="toast" aria-label="Close">
+                    </button>
+                </div>
+                <div className="toast-body bg-secondary rounded-bottom">
+                    <strong style={{ color: "steelblue" }}>Copied </strong>
+                    Successfully
+                </div>
+            </div>
+        )
+    }
+
+    function removeToast() {
+        setToast(r => r = undefined)
+    }
+
+    function copyText() {
+        navigator.clipboard.writeText('ahhhhhmedeeeee@gmail.com')
+    }
+    // timer for lateInit
+    function toastCountDown() {
+        copyText();
+        window.setTimeout(() => triggerToast(), 100);
+        window.setTimeout(() => removeToast(), 4000);
+    }
+
     return (
         <footer id="footer-sec" className="footer-sec ">
-
+            {toast}
             <ul className="footer-item flex-colomn p-2">
                 <li className="flex-row text-primary fw-bold">
                     <h1 className="fw-bold" style={{ height: "40px" }}>Ahmed Badawy</h1>
@@ -57,7 +94,7 @@ function FooterSection() {
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/ahmed-badawy-61bb7a213/" target={"_blank"}
+                    <div onClick={toastCountDown}
                         className="flex-row fw-bold fa-container
                       text-decoration-none" rel="noreferrer">
                         <h1>
@@ -65,7 +102,7 @@ function FooterSection() {
                                 style={{ margin: '0 10px 0 0', width: '40px' }} /></i>
                             <span className="text-secondary">Email</span>
                         </h1>
-                    </a>
+                    </div>
                 </li>
             </ul>
             <p className="note">

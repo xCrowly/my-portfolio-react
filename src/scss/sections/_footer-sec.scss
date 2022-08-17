@@ -6,7 +6,7 @@
     }
 }
 
-.footer-sec {
+#footer-sec {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -29,8 +29,9 @@
     color: aliceblue;
 }
 
+// fontAwesome icon styling
 .fa-icon {
-    width: 40px;
+    width: 35px;
     margin: 0 10px 10px 0;
 }
 
