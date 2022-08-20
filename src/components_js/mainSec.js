@@ -1,3 +1,4 @@
+import cert_javascript from '../assets/images/FreeCodeCamp_JavaScript_cert.png';
 import cert_resp from '../assets/images/FreeCodeCamp_Responsive_web_design.png';
 
 function MainSection() {
@@ -80,7 +81,7 @@ function MainSection() {
                             <div className="carousel-item img-cert">
                                 <a href="https://www.freecodecamp.org/certification/Crowly/javascript-algorithms-and-data-structures"
                                     target={"_blank"} rel="noreferrer">
-                                    <img src={cert_resp} className="d-block w-100 rounded" alt="Responsive web design cert" />
+                                    <img src={cert_javascript} className="d-block w-100 rounded" alt="Responsive web design cert" />
                                 </a>
                             </div>
                         </div>
