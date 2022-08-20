@@ -78,7 +78,7 @@ function MainSection() {
                                 </a>
                             </div>
                             <div className="carousel-item img-cert">
-                                <a href="https://www.freecodecamp.org/certification/Crowly/responsive-web-design"
+                                <a href="https://www.freecodecamp.org/certification/Crowly/javascript-algorithms-and-data-structures"
                                     target={"_blank"} rel="noreferrer">
                                     <img src={cert_resp} className="d-block w-100 rounded" alt="Responsive web design cert" />
                                 </a>
