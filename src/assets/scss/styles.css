@@ -10775,6 +10775,10 @@ textarea.form-control-lg {
   .note {
     font-size: 12px !important;
   }
+  .footer-item {
+    min-width: 60vw !important;
+    text-align: center;
+  }
 }
 #footer-sec {
   position: relative;
@@ -10789,12 +10793,13 @@ textarea.form-control-lg {
 }
 #footer-sec ul {
   list-style: none;
+  padding-left: 0;
 }
 
 .footer-item {
-  margin: auto;
+  margin: 0 auto;
   padding: auto;
-  min-width: 30vw;
+  min-width: 25vw;
   color: aliceblue;
 }
 

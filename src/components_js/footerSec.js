@@ -1,4 +1,4 @@
-import { faAt } from "@fortawesome/free-solid-svg-icons";
+import { faAt, faR } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from 'react';
 
@@ -42,18 +42,18 @@ function FooterSection() {
     return (
         <footer id="footer-sec" className="footer-sec ">
             {toast}
-            <ul className="footer-item flex-colomn p-2">
-                <li className="flex-row text-primary fw-bold">
-                    <h1 className="fw-bold" style={{ height: "40px" }}>Ahmed Badawy</h1>
+            <ul className="footer-item flex-colomn p-2 my-5">
+                <li className="flex-row text-primary fw-bold" >
+                    <h1 className="fw-bold">Ahmed Badawy</h1>
                 </li>
-                <li className="flex-row mb-5">
+                <li className="flex-row">
                     Don't hesitate to contact me,
                     <br />
                     I'm always in your service.
                 </li>
             </ul>
 
-            <ul className="footer-item flex-colomn p-0">
+            <ul className="footer-item flex-colomn">
                 <li>
                     <a href="https://github.com/xCrowly" target={"_blank"}
                         className="flex-row fw-bold fa-container text-decoration-none"
@@ -93,18 +93,32 @@ function FooterSection() {
                         </h1>
                     </a>
                 </li>
+            </ul>
+
+            <ul className="footer-item flex-colomn">
                 <li>
                     <div onClick={toastCountDown}
                         className="flex-row fw-bold fa-container
                       text-decoration-none" rel="noreferrer">
                         <h1>
                             <i><FontAwesomeIcon icon={faAt} className="fa-icon" color="var(--bs-secondary)"
-                                style={{ margin: '0 10px 0 0', width: '40px' }} /></i>
+                                style={{ margin: '0 10px 0 0', width: '35px' }} /></i>
                             <span className="text-secondary">Email</span>
                         </h1>
                     </div>
                 </li>
+                <li>
+                    <a href="https://my-resume-10.netlify.app/" target={"_blank"}
+                        className="flex-row fw-bold fa-container
+                      text-decoration-none" rel="noreferrer">
+                        <h1>
+
+                            <span className="text-secondary">Resume</span>
+                        </h1>
+                    </a>
+                </li>
             </ul>
+
             <p className="note">
                 This website was made with "Html-Css-React-BootStrap-Sass"
             </p>
