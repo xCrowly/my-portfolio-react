@@ -10994,6 +10994,11 @@ textarea.form-control-lg {
   margin-right: 35px;
 }
 
+@media (max-width: 576px) {
+  .card-holder {
+    flex-grow: 0.4;
+  }
+}
 .card-container {
   padding: 60px 0;
   display: flex;

@@ -1,5 +1,11 @@
 @use '../custom';
 
+@media(max-width:576px) {
+    .card-holder {
+        flex-grow: .4;
+    }
+}
+
 // card section container inside the project section
 .card-container {
     padding: 60px 0;
