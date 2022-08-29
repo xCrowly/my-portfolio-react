@@ -1,5 +1,6 @@
 import React from "react";
 import img2 from "../assets/svg/Code_Development _Flatline.svg";
+import imgMap from "../assets/svg/world_map.svg";
 
 function Header() {
 
@@ -40,7 +41,10 @@ function Header() {
     }
 
     return (
-        <header className="d-flex flex-wrap flex-row img-header-background posititon-relative">
+        <header className="d-flex flex-wrap flex-row img-header-background posititon-relative" >
+            <img className="img-map img-fluid"
+                src={imgMap} alt="My profile img"
+            />
 
             <div className="d-flex flex-column header-text m-auto flex-shrink-1">
                 <h1>Hi there!,</h1>

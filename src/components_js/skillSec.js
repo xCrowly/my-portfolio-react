@@ -4,7 +4,7 @@ function SkillSection() {
         <section id="skills-sec" className="skills-sec bg-secondary">
 
             {/* Header */}
-            <p className="d-flex flex-row">
+            <p className="d-flex flex-row zIndex">
                 Skills
             </p>
 

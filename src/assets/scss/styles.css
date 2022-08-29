@@ -10857,8 +10857,20 @@ textarea.form-control-lg {
   min-width: 35vw;
   margin: auto;
   animation: zoomIn 1s alternate 0s;
+  z-index: 2;
 }
 
+.img-map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  animation: transitionMap 20s alternate 0s infinite;
+}
+
+.header-text {
+  z-index: 2;
+}
 .header-text h1 {
   font-size: 6vw;
   color: var(--bs-primary);
@@ -10934,6 +10946,17 @@ textarea.form-control-lg {
   animation: fadeIn 1.6s 0s;
 }
 
+@keyframes transitionMap {
+  0% {
+    transform: scale(1) rotateZ(0) skewX(0);
+  }
+  50% {
+    transform: scale(1.7) rotateZ(-10deg) skewX(10deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(0) skewX(0);
+  }
+}
 #main {
   display: flex;
   min-height: 100vh;
@@ -10964,6 +10987,7 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   min-height: 100vh;
   padding: 60px 30px;
+  z-index: 5;
 }
 #skills-sec p {
   width: 100%;
@@ -10986,12 +11010,17 @@ textarea.form-control-lg {
   justify-content: flex-start !important;
   height: 70px !important;
   margin-left: 0 !important;
+  z-index: 6;
 }
 
 .fa-icon-skill {
   height: 65px;
   width: 100%;
   margin-right: 35px;
+}
+
+.zIndex {
+  z-index: 6;
 }
 
 @media (max-width: 576px) {
