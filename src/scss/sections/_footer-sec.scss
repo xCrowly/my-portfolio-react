@@ -28,6 +28,11 @@
     }
 }
 
+.h1-bottom:hover{
+    animation: flip;
+    animation-duration: 1s;
+}
+
 .footer-item {
     margin: 0 auto;
     padding: auto;

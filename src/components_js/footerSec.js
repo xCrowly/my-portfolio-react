@@ -44,7 +44,7 @@ function FooterSection() {
             {toast}
             <ul className="footer-item flex-colomn p-2 my-5">
                 <li className="flex-row text-primary fw-bold" >
-                    <h1 className="fw-bold">Ahmed Badawy</h1>
+                    <h1 className="fw-bold h1-bottom">Ahmed Badawy</h1>
                 </li>
                 <li className="flex-row">
                     Don't hesitate to contact me,

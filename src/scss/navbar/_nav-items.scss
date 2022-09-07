@@ -1,9 +1,17 @@
 @use '../custom';
 
-.nav-item-name{
+.nav-item-name {
     transition: all .3s ease-in-out;
 }
 
-.nav-item-name:hover{
-    transform: translate(0, -3px) scale(1.10); 
+.nav-item-name:hover {
+    animation: rubberBand;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.nav-link:hover {
+    animation: rubberBand;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
