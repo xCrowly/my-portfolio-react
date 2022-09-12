@@ -40,7 +40,7 @@ function MainSection() {
                 {/* intro content */}
                 <div className="tab-pane fade show active" id="pills-intro" role="tabpanel"
                     aria-labelledby="pills-intro-tab" tabIndex="0">
-                    <strong className="fs-2 " style={{ color: "#4682B4" }}>
+                    <strong className="fs-2 " style={{ color: "var(--steelblue)" }}>
                         Hello there,
                     </strong>
                     <br />As i mentioned above
@@ -50,7 +50,7 @@ function MainSection() {
                     Also trying to benefit from some of my skills like
                     problem Solving, good communication, teamwork and organizational skills.
                     <br /><br />
-                    <strong className="fs-3 fw-normal" style={{ color: "#4682B4" }}>
+                    <strong className="fs-3 fw-normal" style={{ color: "var(--steelblue)" }}>
                         What makes me a good choice?
                     </strong>
                     <br />

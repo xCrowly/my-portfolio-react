@@ -28,7 +28,7 @@
     }
 }
 
-.h1-bottom:hover{
+.h1-bottom:hover {
     animation: flip;
     animation-duration: 1s;
 }
@@ -37,7 +37,7 @@
     margin: 0 auto;
     padding: auto;
     min-width: 25vw;
-    color: aliceblue;
+    color: var(--aliceblue);
 }
 
 // fontAwesome icon styling
@@ -57,5 +57,5 @@
     margin: 0;
     font-size: 15px;
     font-weight: 300;
-    color: var(--bs-secondary);
+    color: #FFF5EE;
 }

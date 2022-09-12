@@ -1,6 +1,6 @@
 import React from "react";
 import img2 from "../assets/svg/Code_Development _Flatline.svg";
-import imgMap from "../assets/svg/world_map.svg";
+
 
 function Header() {
 
@@ -12,13 +12,14 @@ function Header() {
             t = <div className="toast fade show toast-welcome zoomIn" role="alert"
                 aria-live="assertive" aria-atomic="true"
             >
-                <div className="toast-header" style={{ backgroundColor: "var(--bs-primary)", color: "#FFFFFF" }}>
+                <div className="toast-header"
+                    style={{ backgroundColor: "var(--bs-primary)", color: "var(--toast-bg)" }}>
                     <strong className="me-auto">Ahmed Badawy</strong>
                     <button type="button" className="btn-close" data-bs-dismiss="toast" aria-label="Close">
                     </button>
                 </div>
-                <div className="toast-body bg-secondary rounded-bottom">
-                    <strong style={{ color: "steelblue" }}>Hello</strong>
+                <div className="toast-body rounded-bottom" style={{ backgroundColor: "var(--bs-secondary)" }}>
+                    <strong style={{ color: "var(--steelblue)" }}>Hello</strong>
                     , Welcome to my website.
                 </div>
             </div>
@@ -42,9 +43,6 @@ function Header() {
 
     return (
         <header className="d-flex flex-wrap flex-row img-header-background posititon-relative" >
-            <img className="img-map img-fluid"
-                src={imgMap} alt="My profile img"
-            />
 
             <div className="d-flex flex-column header-text m-auto flex-shrink-1">
                 <h1>Hi there!,</h1>

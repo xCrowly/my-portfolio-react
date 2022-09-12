@@ -10,8 +10,20 @@
     animation-iteration-count: infinite;
 }
 
-.nav-link:hover {
-    animation: rubberBand;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+.nav-dark-toggle {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 0 10px;
+    float: right !important;
+    background-color: var(--dark-toggle);
+    color: var(--bs-secondary);
+    border-radius: 20px;
+    height: max-content;
+    border: 0;
+    width: 70px;
+}
+
+.nav-dark-toggle:hover {
+    box-shadow: 0 5px 10px var(--dark-toggle-hover);
+    transform: scale(1.05);
 }

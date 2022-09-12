@@ -33,7 +33,6 @@
 
 // header section body 
 .img-header-background {
-    position: relative;
     background: var(--header);
     min-height: 100vh;
     width: 100%;
@@ -71,7 +70,7 @@
 
     & p {
         font-size: 3vw;
-        color: rgb(74, 74, 74);
+        color: var(--body-color);
         font-weight: 400;
         font-style: italic;
         line-height: 2vh;
@@ -80,7 +79,7 @@
 
     & h2 {
         font-size: 6vw;
-        color: steelblue;
+        color: var(--steelblue);
         font-weight: 700;
         font-style: bold !important;
         animation: main-text-anim 1.5s alternate 0s;
@@ -88,7 +87,7 @@
 
     & h3 {
         font-size: 3vw;
-        color: rgb(74, 74, 74);
+        color: var(--body-color);
         font-weight: 700;
         animation: main-text-anim 1.5s alternate 0s;
     }

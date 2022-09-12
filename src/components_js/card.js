@@ -2,7 +2,7 @@ function Card(props) {
 
     // Passing props to card from the Json file
     return (
-        <div className="card card-holder m-4 bg-secondary ">
+        <div className="card card-holder m-4">
             <img src={props.image} className="card-image" alt={props.name} />
             <div className="card-body position-relative" alt={props.name} >
                 <h5 className="card-title">{props.name}</h5>

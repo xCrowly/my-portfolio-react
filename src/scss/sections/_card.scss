@@ -21,7 +21,7 @@
     height: 300px;
     border-radius: 0 !important;
     // transition: all .25s ease-in-out;
-
+    background-color: var(--bs-secondary);
     &:hover {
         animation: bounce;
         animation-duration: 1s;
@@ -39,8 +39,8 @@
 
 // card button
 .card-btn {
-    background: steelblue;
-    color: aliceblue;
+    background: var(--steelblue);
+    color: var(--aliceblue);
     position: absolute;
     text-decoration: none;
     padding: 7px 10px;
@@ -52,9 +52,9 @@
 
     &:hover {
         cursor: pointer;
-        box-shadow: 10px 20px 15px #00000040;
-        color: steelblue !important;
-        background: white !important;
+        box-shadow: 5px 10px 15px #00000040;
+        color: var(--steelblue) !important;
+        background: var(--aliceblue) !important;
 
     }
 }
