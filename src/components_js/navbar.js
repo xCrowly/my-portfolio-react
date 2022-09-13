@@ -22,7 +22,7 @@ function Navbar() {
 
         setDarkMode((darkMode) => {
             if (darkMode === true) {
-                s.style.setProperty("--bs-primary", "#C76494")
+                s.style.setProperty("--bs-primary", "#eb645f")
                 s.style.setProperty("--bs-secondary", "#FFF5EE")
                 s.style.setProperty("--bs-body-color", "#212529")
                 s.style.setProperty("--bs-body-bg", "#FFF5EE")
@@ -30,13 +30,13 @@ function Navbar() {
                 s.style.setProperty("--header", "#FFDAB9")
                 s.style.setProperty("--navbar", "#FFF5EE60")
                 s.style.setProperty("--dark-toggle", "#38434F")
-                s.style.setProperty("--dark-toggle-hover", "#38434F50")
+                s.style.setProperty("--dark-toggle-hover", "#38434F80")
                 s.style.setProperty("--toast-bg", "#ffffff")
                 s.style.setProperty("--steelblue", "#4682B4")
 
                 return !darkMode;
             } else {
-                s.style.setProperty("--bs-primary", "#C76494")
+                s.style.setProperty("--bs-primary", "#eb645f")
                 s.style.setProperty("--bs-secondary", "#334155")
                 s.style.setProperty("--bs-body-color", "#FFF5EE")
                 s.style.setProperty("--bs-body-bg", "#334155")
@@ -44,7 +44,7 @@ function Navbar() {
                 s.style.setProperty("--header", "#1E293B")
                 s.style.setProperty("--navbar", "#33415560")
                 s.style.setProperty("--dark-toggle", "#FFF5EE")
-                s.style.setProperty("--dark-toggle-hover", "#FFF5EE50")
+                s.style.setProperty("--dark-toggle-hover", "#FFF5EE80")
                 s.style.setProperty("--toast-bg", "#ffffff")
                 s.style.setProperty("--steelblue", "#38BDF8")
 
