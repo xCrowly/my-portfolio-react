@@ -43,8 +43,7 @@ function MainSection() {
                     <strong className="fs-2 " style={{ color: "var(--steelblue)" }}>
                         Hello there,
                     </strong>
-                    <br />As i mentioned above
-                    my name is Ahmed and i'm a <strong>Self taught developer</strong> with unlimited thirst for continuous
+                    <br />I'm a <strong>Self taught developer</strong> with unlimited thirst for continuous
                     learning and improvement, Willing to achieve success through hard work.
                     <br />
                     Also trying to benefit from some of my skills like

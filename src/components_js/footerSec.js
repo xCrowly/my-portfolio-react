@@ -48,7 +48,7 @@ function FooterSection() {
                 </li>
                 <li className="flex-row">
                     Don't hesitate to contact me,
-                    <br />
+                    <br />  
                     I'm always in your service.
                 </li>
             </ul>
@@ -101,8 +101,8 @@ function FooterSection() {
                         className="flex-row fw-bold fa-container
                       text-decoration-none" rel="noreferrer">
                         <h1>
-                            <i><FontAwesomeIcon icon={faAt} className="fa-icon" color="#FFF5EE"
-                                style={{ margin: '0 10px 0 0', width: '35px' }} /></i>
+                            {/* <i><FontAwesomeIcon icon={faAt} className="fa-icon" color="#FFF5EE"
+                                style={{ margin: '0 10px 0 0', width: '35px' }} /></i> */}
                             <span style={{color:"#FFF5EE"}}>Email</span>
                         </h1>
                     </div>
@@ -120,7 +120,7 @@ function FooterSection() {
             </ul>
 
             <p className="note">
-                This website was made with "Html-Css-React-BootStrap-Sass"
+                This website was made by "Html-Css-React-BootStrap-Sass"
             </p>
         </footer>
     )
