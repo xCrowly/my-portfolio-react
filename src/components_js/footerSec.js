@@ -30,7 +30,7 @@ function FooterSection() {
     }
 
     function copyText() {
-        navigator.clipboard.writeText('ahhhhhmedeeeee@gmail.com')
+        navigator.clipboard.writeText('badawy.ca@gmail.com')
     }
     // timer for lateInit
     function toastCountDown() {
