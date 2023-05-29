@@ -109,7 +109,7 @@ function FooterSection() {
                     </div>
                 </li>
                 <li>
-                    <a href="https://my-resume-10.netlify.app/" target={"_blank"}
+                    <a href="https://docs.google.com/document/d/1XMQ83821BXDHdYT_iV4GuDk0Et5Ad-0i/edit?usp=sharing&ouid=117636194880454081346&rtpof=true&sd=true" target={"_blank"}
                         className="flex-row fw-bold fa-container
                       text-decoration-none" rel="noreferrer">
                         <h1>
