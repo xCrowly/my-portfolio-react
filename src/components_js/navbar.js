@@ -12,16 +12,15 @@ const styles = {
 
 function Navbar() {
 
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(localStorage.getItem('themeMode'));
     const mapDark = imgMapDark;
     const mapLight = imgMapLight;
 
+    var s = document.querySelector(":root")
     function set_dark() {
 
-        var s = document.querySelector(":root")
-
         setDarkMode((darkMode) => {
-            if (darkMode === true) {
+            if (darkMode === 'true' || darkMode === 'null') {
                 s.style.setProperty("--bs-primary", "#eb645f")
                 s.style.setProperty("--bs-secondary", "#FFF5EE")
                 s.style.setProperty("--bs-body-color", "#212529")
@@ -34,7 +33,8 @@ function Navbar() {
                 s.style.setProperty("--toast-bg", "#ffffff")
                 s.style.setProperty("--steelblue", "#4682B4")
 
-                return !darkMode;
+                localStorage.setItem('themeMode', 'false')
+                return darkMode = localStorage.getItem('themeMode');
             } else {
                 s.style.setProperty("--bs-primary", "#eb645f")
                 s.style.setProperty("--bs-secondary", "#334155")
@@ -48,13 +48,47 @@ function Navbar() {
                 s.style.setProperty("--toast-bg", "#ffffff")
                 s.style.setProperty("--steelblue", "#38BDF8")
 
-                return !darkMode;
+                localStorage.setItem('themeMode', 'true')
+                return darkMode = localStorage.getItem('themeMode');
             }
         })
     }
 
+    function checkDarkMode(darkMode) {
+        if (darkMode === 'true' || darkMode === 'null') {
+            s.style.setProperty("--bs-primary", "#eb645f")
+            s.style.setProperty("--bs-secondary", "#FFF5EE")
+            s.style.setProperty("--bs-body-color", "#212529")
+            s.style.setProperty("--bs-body-bg", "#FFF5EE")
+            s.style.setProperty("--footer", "#162B45")
+            s.style.setProperty("--header", "#FFDAB9")
+            s.style.setProperty("--navbar", "#FFF5EE60")
+            s.style.setProperty("--dark-toggle", "#38434F")
+            s.style.setProperty("--dark-toggle-hover", "#38434F80")
+            s.style.setProperty("--toast-bg", "#ffffff")
+            s.style.setProperty("--steelblue", "#4682B4")
+
+            return;
+        } else {
+            s.style.setProperty("--bs-primary", "#eb645f")
+            s.style.setProperty("--bs-secondary", "#334155")
+            s.style.setProperty("--bs-body-color", "#FFF5EE")
+            s.style.setProperty("--bs-body-bg", "#334155")
+            s.style.setProperty("--footer", "#1E293B")
+            s.style.setProperty("--header", "#1E293B")
+            s.style.setProperty("--navbar", "#33415560")
+            s.style.setProperty("--dark-toggle", "#FFF5EE")
+            s.style.setProperty("--dark-toggle-hover", "#FFF5EE80")
+            s.style.setProperty("--toast-bg", "#ffffff")
+            s.style.setProperty("--steelblue", "#38BDF8")
+
+            return;
+        }
+    }
+    checkDarkMode(darkMode)
+
     function returnMap() {
-        if (darkMode === false) {
+        if (darkMode === 'true') {
             return (<img className="img-map img-fluid"
                 src={mapLight}
                 alt="My profile img"
@@ -70,6 +104,7 @@ function Navbar() {
     return (
         <div >
             {returnMap()}
+
             <nav className="navbar navbar-expand-md fixed-top shadow w-100" style={styles}>
 
                 <div className="container-fluid">
@@ -101,8 +136,10 @@ function Navbar() {
                             </li>
                             <li className="nav-item">
                                 <button className="nav-dark-toggle"
-                                    onClick={() => set_dark()}>
-                                    {darkMode === true ? 'Light' : 'Dark'}
+                                    onClick={set_dark}>
+                                    {darkMode === 'false' ? 'Light'
+                                        : darkMode === null ? 'Light'
+                                            : 'Dark'}
                                 </button>
                             </li>
                         </ul>
