@@ -2,6 +2,12 @@
     "data": {
         "cards": [
             {
+                "name": "Expense Tracker",
+                "link": "https://expense-tracker-404.netlify.app/",
+                "image": "Expense-Tracker.png",
+                "description": "Created using React.js, React-routers and firebase"
+            },
+            {
                 "name": "Meme boss",
                 "link": "https://meme-boss.netlify.app/",
                 "image": "Meme-boss.png",
